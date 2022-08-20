@@ -210,7 +210,7 @@ double calculateDailySalary(int startHours, int startMinutes, int endHours, int 
 			return shiftDuration * 30;
 		}
 	}
-	else if (startHours < 15 && endHours > 15)
+	else if (startHours < 15 && endHours >= 15)
 	{
 		
 		shiftDuration = calculateShiftDuration(15, 0, endHours, endMinutes);
